@@ -15,6 +15,6 @@ test: node_modules
 	@${BIN}/tape test/*
 
 validate: node_modules
-	@${BIN}/standard
+	@standard
 
 .PHONY: test validate
