@@ -22,6 +22,15 @@ equal({a: 1}, {a: 2}) // => false
 
 ```
 
+## API
+
+### equalObj(obj1, obj2)
+
+- `obj1` - First object.
+- `obj2` - Second object.
+
+**Returns:** Boolean, indicating whether `obj1` and `obj2` are equal.
+
 ## License
 
 MIT
