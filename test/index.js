@@ -2,7 +2,7 @@
  * Imports
  */
 
-var objectEqual = require('..')
+var equal = require('..')
 var test = require('tape')
 
 /**
@@ -10,10 +10,10 @@ var test = require('tape')
  */
 
 test('should work', function (t) {
-  t.ok(objectEqual({a: 1}, {a: 1}))
-  t.ok(!objectEqual({a: 1}, {b: 1}))
-  t.ok(!objectEqual({a: 1}, {}))
-  t.ok(!objectEqual({a: 1}, {a: 2}))
-  t.ok(!objectEqual({a: 1}, {a: 1, b: 2}))
+  t.ok(equal({a: 1}, {a: 1}))
+  t.ok(!equal({a: 1}, {b: 1}))
+  t.ok(!equal({a: 1}, {}))
+  t.ok(!equal({a: 1}, {a: 2}))
+  t.ok(!equal({a: 1}, {a: 1, b: 2}))
   t.end()
 })

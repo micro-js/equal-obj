@@ -1,5 +1,5 @@
 {
-  "name": "@f/object-equal",
+  "name": "@f/equal-obj",
   "description": "Shallow object equality check",
   "repository": "git://github.com/micro-js/object-equal.git",
   "version": "1.1.1",

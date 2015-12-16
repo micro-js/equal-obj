@@ -1,27 +1,36 @@
 
-# object-equal
+# equal-obj
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Build status][travis-image]][travis-url]
+[![Git tag][git-image]][git-url]
+[![NPM version][npm-image]][npm-url]
+[![Code style][standard-image]][standard-url]
 
 Shallow object equality check
 
 ## Installation
 
-    $ npm install @f/object-equal
+    $ npm install @f/equal-obj
 
 ## Usage
 
-`objectEqual({a: 1}, {a: 1}) === true`
-`objectEqual({a: 1}, {b: 1}) === false`
+```js
+var equal = require('@f/equal-obj')
+
+equal({a: 1}, {a: 1}) // => true
+equal({a: 1}, {a: 2}) // => false
+
+```
 
 ## License
 
-The MIT License
+MIT
 
-Copyright &copy; 2015, Weo.io &lt;info@weo.io&gt;
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[travis-image]: https://img.shields.io/travis/micro-js/equal-obj.svg?style=flat-square
+[travis-url]: https://travis-ci.org/micro-js/equal-obj
+[git-image]: https://img.shields.io/github/tag/micro-js/equal-obj.svg
+[git-url]: https://github.com/micro-js/equal-obj
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
+[standard-url]: https://github.com/feross/standard
+[npm-image]: https://img.shields.io/npm/v/@f/equal-obj.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/equal-obj
