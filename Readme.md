@@ -7,7 +7,7 @@ Shallow object equality check
 
 ## Installation
 
-    $ npm install @micro-js/object-equal
+    $ npm install @f/object-equal
 
 ## Usage
 
